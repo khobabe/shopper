@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
  
 export function Banner() {
   return (
-    <Carousel loop={true} autoplay={true} autoplayDelay={2000}
+    <Carousel loop={true} autoplay={false} autoplayDelay={3000}
       className="rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -20,7 +20,12 @@ export function Banner() {
       )}
     >
       <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+        alt="image 3"
+        className="h-[450px] w-full object-cover"
+      />
+      <img
+        src="https://picsum.photos/2500/2500"
         alt="image 1"
         className="h-[450px] w-full object-cover"
       />
