@@ -64,18 +64,22 @@ export function Sidebar() {
           </ListItem>
           <AccordionBody className="py-1">
             <List className="p-0">
+              <a href="/admin/category/create" className="text-initial">
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
                 Insert Category
-              </ListItem>
+              </ListItem> 
+              </a>
+              <a href="/admin/category" className="text-initial">
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
                 Manage Category
               </ListItem>
+              </a>
             </List>
           </AccordionBody>
         </Accordion>
