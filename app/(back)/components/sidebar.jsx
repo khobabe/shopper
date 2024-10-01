@@ -37,12 +37,12 @@ export function Sidebar() {
   return (
     <Card className="h-[calc(100vh-2rem)] w-full border-r p-4 shadow-xl shadow-blue-gray-900/5">
       <List>
-      <ListItem>
-        <ListItemPrefix>
-          <InboxIcon className="h-5 w-5" />
-        </ListItemPrefix>
-        Dashboard
-      </ListItem>
+        <ListItem>
+          <ListItemPrefix>
+            <InboxIcon className="h-5 w-5" />
+          </ListItemPrefix>
+          Dashboard
+        </ListItem>
         <Accordion
           open={open === 1}
           icon={
@@ -65,20 +65,20 @@ export function Sidebar() {
           <AccordionBody className="py-1">
             <List className="p-0">
               <a href="/admin/category/create" className="text-initial">
-              <ListItem>
-                <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                </ListItemPrefix>
-                Insert Category
-              </ListItem> 
+                <ListItem>
+                  <ListItemPrefix>
+                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  </ListItemPrefix>
+                  Insert Category
+                </ListItem>
               </a>
               <a href="/admin/category" className="text-initial">
-              <ListItem>
-                <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                </ListItemPrefix>
-                Manage Category
-              </ListItem>
+                <ListItem>
+                  <ListItemPrefix>
+                    <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  </ListItemPrefix>
+                  Manage Category
+                </ListItem>
               </a>
             </List>
           </AccordionBody>
